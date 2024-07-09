@@ -10,4 +10,5 @@ export interface AdvantageCardProps {
   description: string;
   image: StaticImageData;
   advantages: Advantages[];
+  hasButton?: boolean;
 }

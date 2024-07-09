@@ -1,8 +1,15 @@
 import { SectionContainer } from "@/components/SectionContainer";
 import Image from "next/image";
-import diagonalNotebook from "../../../assets/diagonal-notebook.svg";
+import { useRouter } from "next/navigation";
+import initialNotebook from "../../../assets/initial-notebook.png";
 
 export function ScalePayments() {
+  const router = useRouter();
+
+  const redirect = () => {
+    router.replace("https://app.bspay.co/register");
+  };
+
   return (
     <SectionContainer
       additionalSectionClass="h-auto pt-7 md:pt-14"
@@ -14,8 +21,8 @@ export function ScalePayments() {
 
       <div className="flex flex-col md:flex-row items-center md:items-start gap-7 md:gap-20">
         <Image
-          src={diagonalNotebook}
-          alt="Notebook na diagonal"
+          src={initialNotebook}
+          alt="Notebook com Bspay aberto"
           sizes="100vw"
           className="w-80 lg:w-[40rem] h-auto"
           priority
@@ -27,32 +34,21 @@ export function ScalePayments() {
           </h5>
 
           <h3 className="font-jakarta font-bold text-3xl md:text-5xl text-blue-text">
-            Automatize as cobranças da sua empresa!
+            Expanda seu negócio com facilidade
           </h3>
 
           <p className="font-jakarta font-medium text-sm md:text-lg text-gray-text">
-            Descubra como modernizar e simplificar a gestão de cobranças do seu
-            negócio com nossa Régua de Cobrança Inteligente, ferramenta
-            revolucionária projetada para otimizar o processo de contas a
-            receber.
-          </p>
-          <p className="font-jakarta font-medium text-sm md:text-lg text-gray-text">
-            Através desta solução integrada ao nosso sistema de cobrança, você
-            terá acesso a uma cadência de cobrança dinâmica, ágil e
-            personalizada ao perfil e comportamento de pagamento de cada
-            cliente, para atingi-los através de múltiplos canais, maximizando
-            pagamentos e minimizando a inadimplência.
+            a BSPAY oferece uma solução completa para seu negócio, onde você
+            gerencia todas as suas transações financeiras de maneira rápida e
+            segura em diferentes países e moedas.
           </p>
 
-          <button className="flex items-center justify-center w-48 md:w-60 h-10 md:h-12 rounded-xl font-poppins font-medium text-sm md:text-base bg-green-primary text-white hover:brightness-90 hover:border hover:border-green-secondary transition whitespace-nowrap">
-            Conheça essa solução
+          <button
+            className="flex items-center justify-center w-48 md:w-60 h-10 md:h-12 rounded-xl font-poppins font-medium text-sm md:text-base bg-green-primary text-white hover:brightness-90 hover:border hover:border-green-secondary transition whitespace-nowrap"
+            onClick={redirect}
+          >
+            Criar conta
           </button>
-
-          <p className="font-jakarta font-regular text-sm md:text-2xl text-gray-text">
-            A <span className="font-extrabold text-green-primary">BSPAY</span>{" "}
-            oferece uma solução completa para seu negócio, cobre e recebe
-            pagamentos de forma ágil
-          </p>
         </article>
       </div>
     </SectionContainer>

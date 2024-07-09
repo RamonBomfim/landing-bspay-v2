@@ -6,9 +6,9 @@ import { ReasonCard } from "./components/ReasonCard";
 const reasonsForUse: ReasonCardProps[] = [
   {
     icon: ShieldCheck,
-    title: "Segurança",
+    title: "Segurança Avançada",
     description:
-      "Atuamos seguindo as principais recomendações dos órgãos reguladores do mercado financeiro.",
+      " Proteja suas operações financeiras com as melhores práticas de segurança.",
   },
   {
     icon: ThumbsUp,
@@ -20,7 +20,7 @@ const reasonsForUse: ReasonCardProps[] = [
     icon: Medal,
     title: "Credibilidade",
     description:
-      "Somos licenciados pelo Banco Central do Brasil a operar como facilitadora de pagamento.",
+      " Somos licenciados pelo Banco Central do Brasil a operar como facilitadora de pagamento.",
   },
 ];
 
@@ -28,7 +28,7 @@ export function ReasonsForUse() {
   return (
     <SectionContainer
       additionalSectionClass="h-auto pt-14"
-      additionalContainerClass="gap-7 lg:gap-14 px-[1.375rem] lg:px-0"
+      additionalContainerClass="gap-10 lg:gap-20 px-[1.375rem] lg:px-0"
     >
       <h3 className="font-jakarta font-bold text-3xl lg:text-5xl text-blue-text text-center">
         Por que trazer sua operação para BSPAY

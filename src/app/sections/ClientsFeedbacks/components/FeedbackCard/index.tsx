@@ -27,13 +27,15 @@ export function FeedbackCard({
           {stars.map((star) => star)}
         </div>
         <div className="flex items-center gap-5 w-full">
-          <Image
-            src={image}
-            alt="Pessoa"
-            sizes="100vw"
-            className="w-14 h-14 rounded-full"
-            priority
-          />
+          <div className="w-14 h-14 rounded-full border border-green-primary bg-green-secondary">
+            <Image
+              src={image}
+              alt="Pessoa"
+              sizes="100vw"
+              className="w-14 h-auto rounded-full"
+              priority
+            />
+          </div>
 
           <div className="flex flex-col gap-1">
             <h5 className="font-ibmPlex font-semibold text-lg sm:text-xl text-blue-text">

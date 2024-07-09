@@ -6,9 +6,9 @@ export function ReasonCard({
   description,
 }: ReasonCardProps) {
   return (
-    <div className="flex flex-col p-8 w-full lg:w-[25.25rem] h-[17.75rem] lg:h-[22.5rem] gap-2 lg:gap-8 rounded-[1.875rem] border-2 border-green-primary">
+    <div className="flex flex-col p-8 w-full lg:w-[25.25rem] h-[17.75rem] lg:h-[24.375rem] xl:h-[22.5rem] gap-2 lg:gap-8 rounded-[1.875rem] border-2 border-green-primary">
       <Icon
-        className="w-[4.625rem] h-auto text-green-primary"
+        className="w-[4.625rem] h-auto min-h-[4.625rem] text-green-primary"
         weight="duotone"
       />
 

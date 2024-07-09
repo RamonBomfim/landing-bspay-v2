@@ -1,44 +1,54 @@
 import { SectionContainer } from "@/components/SectionContainer";
 import { FeedbackCardProps } from "@/types/FeedbackCard";
 import { Star, StarHalf } from "@phosphor-icons/react/dist/ssr";
-import person1 from "../../../assets/person01.png";
-import person2 from "../../../assets/person02.png";
-import person3 from "../../../assets/person03.png";
+import Image from "next/image";
+import client1 from "../../../assets/client-1.png";
+import client2 from "../../../assets/client-2.png";
+import client3 from "../../../assets/client-3.png";
+import rocket from "../../../assets/rocket.svg";
+import walletWithCash from "../../../assets/wallet-with-cash.svg";
 import { FeedbackCard } from "./components/FeedbackCard";
 
 const feedbacks: FeedbackCardProps[] = [
   {
-    name: "Maria Silva",
+    name: "Lucas Omena",
     rating: 5,
     feedback:
-      "Vocês são a parceira ideal para nossos negócios online. O serviço de vocês é essencial para garantir a segurança e a eficiência das transações.",
-    description: "Gerente de E-commerce",
-    image: person1,
+      "A plataforma é muito fácil de mexer, sem nenhuma complicação. e eu posso receber pagamentos via pix, cripto e cartão de crédito pra mim isso é muito bom, isso faz toda diferença. Vocês são demais!",
+    description: "Cliente",
+    image: client1,
   },
   {
-    name: "João Oliveira",
-    rating: 4.5,
+    name: "André Ferreira",
+    rating: 5,
     feedback:
-      "Estamos muito satisfeitos com a qualidade do serviço. Vocês são extremamente profissionais e eficientes!",
-    description: "CEO",
-    image: person3,
+      "Atendimento muito bom, não tenho o que reclamar, suporte via WhatsApp da BSPay é muito boa e rápida, sempre disponível. muito fácil de usar, 100% de aprovação",
+    description: "Cliente",
+    image: client2,
   },
   {
-    name: "Pedro Santos",
-    rating: 4.5,
+    name: "Carlos Mendes",
+    rating: 5,
     feedback:
-      "Os devs gostaram bastante de documentação que vocês montaram, a integração foi fácil e rápida! E suporte também tirou várias dúvidas.",
-    description: "Diretor Financeiro",
-    image: person2,
+      "Nossa experiência com a BSPay tem sido muito boa. A qualidade do serviço oferecido é incomparável e a equipe é show de bola. Com a BSPay não tenho dor de cabeça, superou minhas expectativas.",
+    description: "Cliente",
+    image: client3,
   },
 ];
 
 export function ClientsFeedbacks() {
   return (
     <SectionContainer
-      additionalSectionClass="bg-gradient-radial w-full h-auto lg:h-[48.5rem] pb-[6.25rem] lg:pb-0"
-      additionalContainerClass="gap-7 lg:gap-14 pt-10 lg:py-14 px-[1.375rem] lg:px-0"
+      additionalSectionClass="bg-gradient-radial w-full h-auto pb-[6.25rem] lg:pb-0"
+      additionalContainerClass="gap-7 lg:gap-14 pt-10 lg:py-14 px-[1.375rem] lg:px-0 lg:relative"
     >
+      <Image
+        src={walletWithCash}
+        alt="Carteira com dinheiro"
+        sizes="100vw"
+        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:top-[-7.375rem] lg:left-[-1.5rem]"
+        priority
+      />
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-7 lg:gap-0 w-full">
         <div className="flex flex-col gap-5 lg:gap-6">
           <h3 className="font-ibmPlex font-semibold text-2xl lg:text-6xl text-gray-white">
@@ -112,6 +122,14 @@ export function ClientsFeedbacks() {
           />
         ))}
       </div>
+
+      <Image
+        src={rocket}
+        alt="Foquete"
+        sizes="100vw"
+        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:right-[-1.375rem] lg:bottom-[-7.75rem]"
+        priority
+      />
     </SectionContainer>
   );
 }

@@ -1,9 +1,8 @@
 import { SectionContainer } from "@/components/SectionContainer";
 import { AdvantageCardProps } from "@/types/AdvantageCard";
-import coffer from "../../../assets/coffer.svg";
-import graficoPizza from "../../../assets/grafico-pizza.svg";
-import placaOuro from "../../../assets/placa-ouro.svg";
-import shield from "../../../assets/shield.svg";
+import celphone from "../../../assets/celphone.svg";
+import goldChain from "../../../assets/gold-chain.svg";
+import placa from "../../../assets/placa-ouro.svg";
 import { AdvantageCard } from "./components/AdvantageCard";
 
 interface AdvantagesSection extends AdvantageCardProps {
@@ -13,103 +12,76 @@ interface AdvantagesSection extends AdvantageCardProps {
 const advantagesLeft: AdvantagesSection[] = [
   {
     id: 1,
-    title: "Bspay Bank",
-    description:
-      "A única plataforma especializada para negócios digitais com Internet Banking integrado, tudo na palma da sua mão.",
-    image: coffer,
+    title: "App BSPAY",
+    description: "Simplifique seus Pagamentos Com o App BSPAY",
+    image: celphone,
+    hasButton: true,
     advantages: [
       {
         id: 1,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage:
+          "Tenha liberdade na palma da sua mão, a hora que quiser com nosso app;",
       },
       {
         id: 2,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage:
+          "Notificações Instantâneas: Mantendo você informado com notificações em tempo real de entradas e saídas.",
       },
       {
         id: 3,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 4,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage:
+          "Transparência Total: Controle absoluto e transparência em todas as operações.",
       },
     ],
   },
   {
     id: 2,
-    title: "Bspay Bank",
+    title: "Pagamentos Flexíveis",
     description:
-      "A única plataforma especializada para negócios digitais com Internet Banking integrado, tudo na palma da sua mão.",
-    image: shield,
+      "Com a BSPAY, você pode receber pagamentos via Pix, criptomoedas ou cartão de crédito com total segurança.",
+    image: placa,
     advantages: [
       {
+        id: 4,
+        advantage: "Flexibilidade que seu negócio precisa.",
+      },
+      {
         id: 5,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage: "Aumente Suas Opções de Pagamento.",
       },
       {
         id: 6,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage: "Facilite Seus Pagamentos com BSPAY.",
       },
       {
         id: 7,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 8,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage: "Transações rápidas e seguras.",
       },
     ],
   },
-];
-
-const advantagesRight: AdvantagesSection[] = [
   {
     id: 3,
-    title: "Bspay Bank",
+    title: "Integração total",
     description:
-      "A única plataforma especializada para negócios digitais com Internet Banking integrado, tudo na palma da sua mão.",
-    image: graficoPizza,
+      "Solução completa com integração total. Gerencie todas as formas de pagamento e transações em um único lugar.",
+    image: goldChain,
     advantages: [
       {
+        id: 8,
+        advantage:
+          " Experimente a praticidade de uma plataforma 100% integrada.",
+      },
+      {
         id: 9,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage:
+          "Tenha tudo que precisa para gerenciar todos os processos financeiros do seu negócio.",
       },
       {
         id: 10,
-        advantage: "Controle completo desde o checkout até as transações;",
+        advantage: "Integração total para atender todas as suas necessidades.",
       },
       {
         id: 11,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 12,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Bspay Bank",
-    description:
-      "A única plataforma especializada para negócios digitais com Internet Banking integrado, tudo na palma da sua mão.",
-    image: placaOuro,
-    advantages: [
-      {
-        id: 13,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 14,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 15,
-        advantage: "Controle completo desde o checkout até as transações;",
-      },
-      {
-        id: 16,
         advantage: "Controle completo desde o checkout até as transações;",
       },
     ],
@@ -119,18 +91,12 @@ const advantagesRight: AdvantagesSection[] = [
 export function Advantages() {
   return (
     <SectionContainer
-      additionalSectionClass="pb-14 h-[156rem] lg:h-auto lg:pb-0"
+      additionalSectionClass="pb-14 h-auto lg:pb-0"
       additionalContainerClass="bg-coins-bg bg-contain lg:bg-auto lg:bg-no-repeat bg-left pt-14 px-[1.375rem] lg:px-0"
     >
-      <div className="flex flex-col lg:flex-row lg:justify-center gap-14 w-full h-[115rem]">
+      <div className="flex flex-col lg:flex-row lg:justify-center gap-14 w-full h-auto">
         <div className="flex flex-col items-center gap-14">
           {advantagesLeft.map((advantage) => (
-            <AdvantageCard key={advantage.id} {...advantage} />
-          ))}
-        </div>
-
-        <div className="flex flex-col items-center gap-14 lg:pt-[19.125rem]">
-          {advantagesRight.map((advantage) => (
             <AdvantageCard key={advantage.id} {...advantage} />
           ))}
         </div>

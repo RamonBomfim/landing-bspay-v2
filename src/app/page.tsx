@@ -1,17 +1,15 @@
 "use client";
 
-import { Divider } from "@/components/Divider";
 import { Footer } from "@/components/Footer";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Advantages } from "./sections/Advantages";
 import { ClientsFeedbacks } from "./sections/ClientsFeedbacks";
-import { Contact } from "./sections/Contact";
 import { Faq } from "./sections/Faq";
-import { Guarantees } from "./sections/Guarantees";
 import { ManagmentFeatures } from "./sections/ManagmentFeatures";
 import { MovementInfo } from "./sections/MovementInfo";
+import { ReadyToGo } from "./sections/ReadyToGo";
 import { ReasonsForUse } from "./sections/ReasonsForUse";
 import { ScalePayments } from "./sections/ScalePayments";
 import { Welcome } from "./sections/Welcome";
@@ -52,15 +50,11 @@ export default function Home() {
     <>
       <Welcome />
 
-      <Divider optionalClass="md:hidden" />
-
       <ScalePayments />
 
       <ReasonsForUse />
 
       <ManagmentFeatures />
-
-      <Divider optionalClass="py-7 md:pt-7 md:pb-14" />
 
       <ClientsFeedbacks />
 
@@ -72,9 +66,7 @@ export default function Home() {
 
       <MovementInfo />
 
-      <Contact form={form} onSubmit={onSubmit} />
-
-      <Guarantees />
+      <ReadyToGo />
 
       <Footer />
     </>

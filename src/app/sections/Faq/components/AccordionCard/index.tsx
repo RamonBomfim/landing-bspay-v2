@@ -4,8 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { AccordionCardProps } from "@/types/AccordionCard";
 
-export function AccordionCard() {
+export function AccordionCard({ question, answer }: AccordionCardProps) {
   return (
     <Accordion
       type="single"
@@ -13,13 +14,11 @@ export function AccordionCard() {
       className="border-b-1 border-gray-border"
     >
       <AccordionItem value="pergunta-1">
-        <AccordionTrigger className="font-jakarta font-medium text-2xl text-blue-text pb-2 hover:no-underline">
-          Lorem Ipsum dolor?
+        <AccordionTrigger className="font-jakarta font-medium text-2xl text-blue-text text-left pb-2 hover:no-underline">
+          {question}
         </AccordionTrigger>
         <AccordionContent className="font-jakarta font-regular text-base text-gray-text max-w-[45rem] pb-8">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies
-          quam quis ex rutrum, et pellentesque ex fermentum. Fusce id eros
-          velit.
+          {answer}
         </AccordionContent>
       </AccordionItem>
     </Accordion>

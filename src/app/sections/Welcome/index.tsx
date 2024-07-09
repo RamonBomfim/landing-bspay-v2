@@ -23,7 +23,7 @@ export function Welcome() {
       </article>
 
       <article className="flex items-end justify-end pt-5 pb-7 md:py-5 px-0 h-72 md:absolute md:bottom-[-6rem] lg:bottom-[-3rem] md:right-[-1.375rem]">
-        <div className="flex items-center justify-end pr-6 rounded-s-[1.875rem] w-96 h-32 lg:w-[40rem] lg:h-40 bg-gray-black relative">
+        <div className="flex items-center justify-end pr-6 rounded-s-[1.875rem] xl:rounded-[1.875rem] w-96 h-32 lg:w-[40rem] lg:h-40 bg-gray-black relative">
           <CardGroup />
 
           <Image
