@@ -16,13 +16,17 @@ export function WhyCard({
       </div>
 
       <h4
-        className={`font-ibmPlex font-semibold text-2xl text-blue-text text-${textOrientation} lg:text-center max-w-[10rem] lg:w-full`}
+        className={`font-ibmPlex font-semibold text-2xl text-blue-text ${
+          textOrientation === "right" ? "text-right" : "text-left"
+        } lg:text-center max-w-[10rem] lg:w-full`}
       >
         {title}
       </h4>
 
       <p
-        className={`font-franklin font-medium text-lg text-gray-border text-${textOrientation} lg:text-center max-w-[15rem] lg:w-full`}
+        className={`font-franklin font-medium text-lg text-gray-border ${
+          textOrientation === "right" ? "text-right" : "text-left"
+        } lg:text-center max-w-[15rem] lg:w-full`}
       >
         {description}
       </p>
