@@ -21,7 +21,7 @@ export function WhyChoose() {
         Por Que Escolher a BSPAY?
       </h3>
 
-      <div className="flex flex-col lg:relative lg:justify-center lg:items-center gap-3 lg:gap-0 w-full pt-0 lg:pt-16 bg-why-choose-bg lg:bg-none bg-contain bg-no-repeat bg-center">
+      <div className="flex flex-col lg:relative lg:justify-center lg:items-center gap-3 lg:gap-0 w-full pt-0 lg:pt-16 bg-why-choose-bg lg:bg-none bg-no-repeat bg-center bg-contain">
         <div className="flex flex-col lg:flex-row lg:justify-between gap-3 w-full">
           <WhyCard
             icon={ArrowsLeftRight}
