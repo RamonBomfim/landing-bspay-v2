@@ -15,7 +15,7 @@ export function MovementInfo() {
         src={cash}
         alt="Imagem de bolo de dinherio 3D"
         sizes="100vw"
-        className="w-[8.5rem] lg:w-[12.5rem] h-auto absolute bottom-[-5rem] lg:bottom-[-7.0625rem]  left-0 lg:left-[-1.3rem]"
+        className="w-[11.5rem] lg:w-[13.5rem] h-auto absolute bottom-[-6rem] lg:bottom-[-7.0625rem] left-0 lg:left-[-1.3rem]"
         priority
       />
 
@@ -70,7 +70,7 @@ export function MovementInfo() {
         src={sale}
         alt="Imagem de selo de liquidação"
         sizes="100vw"
-        className="w-[6.75rem] lg:w-[8.75rem] h-auto absolute top-[-6.25rem] lg:top-[-8.625rem] right-0 lg:right-[-1.3rem]"
+        className="w-[8.75rem] lg:w-[10.75rem] h-auto absolute top-[-4.25rem] lg:top-[-5.625rem] right-0"
         priority
       />
     </SectionContainer>

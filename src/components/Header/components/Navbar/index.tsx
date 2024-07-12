@@ -2,16 +2,16 @@ import { NavLink } from "../NavLink";
 
 const navLinks: { id: string; label: string }[] = [
   {
-    id: "products",
-    label: "produtos",
+    id: "solutions",
+    label: "soluções",
+  },
+  {
+    id: "rates",
+    label: "taxas",
   },
   {
     id: "about",
     label: "sobre nós",
-  },
-  {
-    id: "price",
-    label: "preço",
   },
   {
     id: "help",

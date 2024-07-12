@@ -16,15 +16,16 @@ export function Footer() {
       additionalContainerClass="py-14 px-[1.375rem] lg:px-0"
     >
       <div className="flex lg:items-center justify-between w-full">
-        <div className="flex flex-col gap-4 lg:gap-16">
+        <div className="flex flex-col lg:max-w-[36.25rem] gap-4 lg:gap-16">
           <Logo />
 
-          <p className="font-jakarta font-bold text-xs lg:text-2xl text-gray-white">
-            A Gateway mais completa do mercado
+          <p className="font-jakarta font-bold text-xs lg:text-xl text-gray-white">
+            BSPAY Soluções de Pagamentos Ltda. CNPJ:46.872.831/0001-54
           </p>
 
           <span className="font-jakarta font-regular text-[.625rem] lg:text-base text-gray-text">
-            @{new Date().getFullYear()} BS Pay LTD. Todos direitos reservados.
+            Avenida Tancredo Neves, 1189, Edif. Guimarães Trad., Sala 1603,
+            Caminho das Árvores, CEP: 41820-021, Salvador/BA
           </span>
 
           <div className="flex lg:hidden flex-col gap-4">

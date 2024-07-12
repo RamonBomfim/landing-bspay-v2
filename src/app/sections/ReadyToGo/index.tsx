@@ -21,7 +21,7 @@ export function ReadyToGo() {
       additionalSectionClass="pt-40 lg:pt-52 pb-24 lg:pb-12 lg:px-0"
       additionalContainerClass="items-end pl-[1.125rem] lg:pl-0"
     >
-      <div className="flex flex-col lg:flex-row bg-gray-black w-full lg:w-[87%] h-auto lg:h-[30.25rem] rounded-s-[1.875rem] xl:rounded-[1.875rem] pl-7 py-7 gap-7">
+      <div className="flex flex-col lg:flex-row bg-gray-black w-full lg:w-[87%] h-auto lg:h-[30.25rem] rounded-s-[1.875rem] md:rounded-[1.875rem] pl-7 py-7 gap-7">
         <div className="flex flex-col gap-7 lg:gap-10 pr-3 lg:pr-0">
           <h4 className="font-jakarta font-bold text-3xl lg:text-5xl text-gray-white">
             Pronto para começar?

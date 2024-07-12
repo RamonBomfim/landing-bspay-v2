@@ -6,4 +6,5 @@ export interface WhyCardProps {
   title: string;
   description: string;
   className?: string;
+  textOrientation?: "left" | "right" | "center";
 }

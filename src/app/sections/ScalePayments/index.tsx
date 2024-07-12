@@ -24,7 +24,7 @@ export function ScalePayments() {
           src={initialNotebook}
           alt="Notebook com Bspay aberto"
           sizes="100vw"
-          className="w-80 lg:w-[40rem] h-auto"
+          className="w-80 lg:w-[40rem] h-auto hover:animate-pulse"
           priority
         />
 

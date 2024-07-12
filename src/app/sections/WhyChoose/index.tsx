@@ -33,6 +33,7 @@ export function WhyChoose() {
             title="Transparência e Controle"
             description="Tenha total transparência e controle sobre todas as operações financeiras."
             className="items-end"
+            textOrientation="right"
           />
           <WhyCard
             icon={PixLogo}
@@ -47,6 +48,7 @@ export function WhyChoose() {
             title="Suporte personalizado 24hr"
             description="Com grupo de WhatsApp exclusivo para cada cliente, disponível 24 horas por dia, 7 dias por semana."
             className="items-end"
+            textOrientation="right"
           />
           <WhyCard
             icon={LockKey}
@@ -58,6 +60,7 @@ export function WhyChoose() {
             title="Facilidade de Integração"
             description="Integre a BSPAY em qualquer tipo de plataforma em menos de 1 hora."
             className="items-end"
+            textOrientation="right"
           />
         </div>
 

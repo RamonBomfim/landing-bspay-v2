@@ -5,6 +5,7 @@ export function WhyCard({
   title,
   description,
   className,
+  textOrientation = "left",
 }: WhyCardProps) {
   return (
     <div
@@ -14,11 +15,15 @@ export function WhyCard({
         <Icon className="w-10 h-auto text-white" />
       </div>
 
-      <h4 className="font-ibmPlex font-semibold text-2xl text-blue-text text-center max-w-[10rem] lg:w-full">
+      <h4
+        className={`font-ibmPlex font-semibold text-2xl text-blue-text text-${textOrientation} lg:text-center max-w-[10rem] lg:w-full`}
+      >
         {title}
       </h4>
 
-      <p className="font-franklin font-medium text-lg text-gray-border max-w-[15rem] lg:w-full">
+      <p
+        className={`font-franklin font-medium text-lg text-gray-border text-${textOrientation} lg:text-center max-w-[15rem] lg:w-full`}
+      >
         {description}
       </p>
     </div>

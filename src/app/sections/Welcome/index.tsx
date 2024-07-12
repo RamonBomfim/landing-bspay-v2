@@ -16,9 +16,13 @@ export function Welcome() {
         <IntroductionText />
 
         <div className="flex items-center justify-between w-[20.5rem] h-[4.375rem] lg:w-[32rem] lg:h-[6.25rem]">
-          <IntroductionNumber number="90" subText="Parceiras" />
-          <IntroductionNumber number="310" subText="Usuários ativos" />
-          <IntroductionNumber number="952k" subText="Em trasações por ano" />
+          <IntroductionNumber number={90} span="+" subText="Parceiras" />
+          <IntroductionNumber number={310} span="+" subText="Usuários ativos" />
+          <IntroductionNumber
+            number={952}
+            span="k+"
+            subText="Em trasações por ano"
+          />
         </div>
       </article>
 

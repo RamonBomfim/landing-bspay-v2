@@ -46,7 +46,7 @@ export function ClientsFeedbacks() {
         src={walletWithCash}
         alt="Carteira com dinheiro"
         sizes="100vw"
-        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:top-[-7.375rem] lg:left-[-1.5rem]"
+        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:top-[-5.375rem] lg:left-[-1.5rem]"
         priority
       />
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-7 lg:gap-0 w-full">
@@ -127,7 +127,7 @@ export function ClientsFeedbacks() {
         src={rocket}
         alt="Foquete"
         sizes="100vw"
-        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:right-[-1.375rem] lg:bottom-[-7.75rem]"
+        className="hidden lg:block lg:w-40 lg:h-auto lg:absolute lg:right-[-1.375rem] lg:bottom-[-6.75rem]"
         priority
       />
     </SectionContainer>
