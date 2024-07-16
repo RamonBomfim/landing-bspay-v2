@@ -54,7 +54,7 @@ export default function RootLayout({
       <body
         className={`${jakarta.variable} ${poppins.variable} ${ibmPlex.variable} ${franklin.variable}`}
       >
-        <main className="flex flex-col w-full h-full bg-gray-white scroll-auto">
+        <main className="flex flex-col w-full h-full bg-gray-white scroll-smooth overflow-y-auto overflow-x-hidden">
           <Header />
 
           {children}

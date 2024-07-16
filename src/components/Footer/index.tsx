@@ -13,20 +13,11 @@ export function Footer() {
   return (
     <SectionContainer
       additionalSectionClass="bg-gray-black"
-      additionalContainerClass="py-14 px-[1.375rem] lg:px-0"
+      additionalContainerClass="pt-14 px-[1.375rem] lg:px-0"
     >
-      <div className="flex lg:items-center justify-between w-full">
+      <div className="flex lg:items-center justify-between w-full pb-6">
         <div className="flex flex-col lg:max-w-[36.25rem] gap-4 lg:gap-16">
           <Logo />
-
-          <p className="font-jakarta font-bold text-xs lg:text-xl text-gray-white">
-            BSPAY Soluções de Pagamentos Ltda. CNPJ:46.872.831/0001-54
-          </p>
-
-          <span className="font-jakarta font-regular text-[.625rem] lg:text-base text-gray-text">
-            Avenida Tancredo Neves, 1189, Edif. Guimarães Trad., Sala 1603,
-            Caminho das Árvores, CEP: 41820-021, Salvador/BA
-          </span>
 
           <div className="flex lg:hidden flex-col gap-4">
             <h5 className="font-jakarta font-bold text-base text-green-primary">
@@ -104,14 +95,16 @@ export function Footer() {
               Ajuda
             </a>
             <a
-              href="#"
+              href="https://app.bspay.co/login"
               className="text-gray-white font-jakarta font-medium text-sm w-auto whitespace-nowrap"
+              target="_blank"
             >
               Login
             </a>
             <a
-              href="#"
+              href="https://app.bspay.co/register"
               className="text-gray-white font-jakarta font-medium text-sm w-auto whitespace-nowrap"
+              target="_blank"
             >
               Criar Conta
             </a>
@@ -212,6 +205,19 @@ export function Footer() {
             </div>
           </a>
         </div>
+      </div>
+
+      <hr className="w-full border border-gray-border" />
+
+      <div className="flex items-center justify-between w-full py-6">
+        <p className="font-jakarta font-bold text-[.625rem] lg:text-base text-gray-white w-2/5">
+          BSPAY Soluções de Pagamentos Ltda. CNPJ:46.872.831/0001-54
+        </p>
+
+        <span className="font-jakarta font-regular text-[.625rem] lg:text-base text-gray-text text-right w-2/5">
+          Avenida Tancredo Neves, 1189, Edif. Guimarães Trad., Sala 1603,
+          Caminho das Árvores, CEP: 41820-021, Salvador/BA
+        </span>
       </div>
     </SectionContainer>
   );
