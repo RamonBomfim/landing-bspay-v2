@@ -93,8 +93,8 @@ const advantagesLeft: AdvantagesSection[] = [
 export function Advantages() {
   return (
     <SectionContainer
-      additionalSectionClass="pb-14 h-auto lg:pb-0"
-      additionalContainerClass="bg-coins-bg bg-contain lg:bg-auto lg:bg-no-repeat bg-left pt-14 px-[1.375rem] lg:px-0"
+      additionalSectionClass="pb-14 h-auto lg:pb-0 bg-coins-bg bg-contain lg:bg-contain bg-left"
+      additionalContainerClass="pt-14 px-[1.375rem] lg:px-0"
     >
       <div className="flex flex-col gap-14 w-full h-auto">
         {advantagesLeft.map((advantage) => (
