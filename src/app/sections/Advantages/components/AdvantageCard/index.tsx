@@ -1,6 +1,22 @@
 import { AdvantageCardProps, Advantages } from "@/types/AdvantageCard";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import dot from "../../../../../assets/dot.svg";
+
+const cardVariants = {
+  hidden: (direction: string) => ({
+    x: direction === "left" ? -200 : 200,
+    opacity: 0,
+  }),
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+    },
+  },
+};
 
 export function AdvantageCard({
   title,
@@ -8,9 +24,19 @@ export function AdvantageCard({
   image,
   advantages,
   hasButton = false,
-}: AdvantageCardProps) {
+  id,
+}: AdvantageCardProps & { id: number }) {
+  const direction = id === 2 ? "right" : "left";
+
   return (
-    <div className="flex flex-col md:flex-row gap-7 md:gap-8 w-full lg:max-w-[58.25rem] h-auto sm:h-[36.5rem] md:h-[27.625rem] py-7 px-5 lg:p-10 rounded-[2.5rem] bg-gray-black">
+    <motion.div
+      className="flex flex-col md:flex-row gap-7 md:gap-8 w-full lg:max-w-[58.25rem] h-auto sm:h-[36.5rem] md:h-[27.625rem] py-7 px-5 lg:p-10 rounded-[2.5rem] bg-gray-black"
+      initial="hidden"
+      whileInView="visible"
+      variants={cardVariants}
+      custom={direction}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="flex md:flex-col-reverse justify-between md:justify-center w-full md:w-1/2 max-h-36 md:max-h-[24.125rem] lg:max-h-[22.625rem] md:gap-5">
         <div className="flex flex-col gap-2 lg:gap-3 max-w-[15.125rem] md:max-w-full">
           <h4 className="font-jakarta font-bold text-3xl lg:text-4xl text-white">
@@ -56,6 +82,6 @@ export function AdvantageCard({
           </button>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
