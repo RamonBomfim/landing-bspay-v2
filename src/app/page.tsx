@@ -5,7 +5,6 @@ import { Advantages } from "./sections/Advantages";
 import { ClientsFeedbacks } from "./sections/ClientsFeedbacks";
 import { Faq } from "./sections/Faq";
 import { ManagmentFeatures } from "./sections/ManagmentFeatures";
-import { MovementInfo } from "./sections/MovementInfo";
 import { ReadyToGo } from "./sections/ReadyToGo";
 import { ReasonsForUse } from "./sections/ReasonsForUse";
 import { ScalePayments } from "./sections/ScalePayments";
@@ -31,8 +30,6 @@ export default function Home() {
       <Advantages />
 
       <Faq />
-
-      <MovementInfo />
 
       <ReadyToGo />
 
